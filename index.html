@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="logo.png.png" type="image/x-icon">
+    <title>ZONA FITNESS GYM</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <a href="/ZonaFitnessGym/admin.html" target="_blank"><img class="LogoHeader" src="logo.png.png" alt="Logo"></a>
+            <h1>ZONA FITNESS <span class="txtRojo">GYM</span></h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar(event)">Inicio</a>
+                <a href="#nosotros" onclick="seleccionar(event)">Nosotros</a>
+                <a href="#servicios" onclick="seleccionar(event)">Servicios</a>
+                <a href="#galeria" onclick="seleccionar(event)">Galería</a>
+                <a href="#equipo" onclick="seleccionar(event)">Equipo</a>
+                <a href="#contacto" onclick="seleccionar(event)">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/zona_fitnessgym/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <!-- Icono del menú responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-seccion">
+            <div class="info">
+                <img src="img/logo.png.png" alt="ZONA FITNESS GYM" class="centrada-imagen">
+                <p>NO SOLO ES TRABAJAR LO FÍSICO, SINO TAMBIÉN LO MENTAL</p>
+            </div>
+            <div class="opciones">
+                <div class="opcion">MUSCULACIÓN</div>
+                <div class="opcion">FUNCIONAL</div>
+                <div class="opcion">BOXING</div>
+                <div class="opcion">URBANO FUSIÓN</div>
+                <div class="opcion">SALSA</div>
+                <div class="opcion">BACHATA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <section id="nosotros" class="nosotros">
+        <div class="fila">
+            <div class="col">
+                <img src="img/nosotros.png" alt="">
+            </div>
+            <div class="col">
+                <div class="contenedor-titulo">
+                    <div class="numero">01</div>
+                    <div class="info">
+                        <span class="frase">¿QUIÉNES SOMOS?</span>
+                        <h2 class="TituloEquipo">NOSOTROS</h2>
+                    </div>
+                </div>
+                <p class="p-especial">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="p-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus quod provident libero, nam corrupti.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col">
+                    <div class="contenedor-titulo">
+                        <div class="numero">02</div>
+                        <div class="info">
+                            <span class="frase">LA MEJOR EXPERIENCIA</span>
+                            <h2>SERVICIOS</h2>
+                        </div>
+                    </div>
+                    <p class="p-especial">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="p-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus quod provident libero, nam corrupti, adipisci ea inventore cum aliquid asperiores pariatur harum sunt. Tempore expedita atque quos ipsum nisi.</p>
+                </div>
+                <div class="col">
+                    <img src="img/servicios.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="info-servicios">
+            <table>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <h3><span class="txtRojo">Pase</span> de Musculación</h3>
+                        <p>Lunes a Viernes</p>
+                        <p>07:00hs a 22:00hs</p>
+                        <p>Sábados</p>
+                        <p>09:00hs a 19:00hs</p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <h3><span class="txtRojo">Clases</span> de Funcional</h3>
+                        <p>Lunes-Miércoles-Viernes</p>
+                        <p>07:30hs a 08:30hs</p>
+                        <p>19:00hs a 20:00hs</p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-mitten"></i>
+                        <h3><span class="txtRojo">Clases</span> de Boxeo</h3>
+                        <p>Miércoles</p>
+                        <p>17:00hs</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <i class="fa-solid fa-heart"></i>
+                        <h3><span class="txtRojo">Clases</span> de Salsa</h3>
+                        <p>Lunes-Miércoles-Viernes</p>
+                        <p>20:00hs a 21:00hs</p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-heart-circle-bolt"></i>
+                        <h3><span class="txtRojo">Clases</span> de Bachata</h3>
+                        <p>Lunes-Miércoles-Viernes</p>
+                        <p>20:00hs a 21:00hs</p>
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-music"></i>
+                        <h3><span class="txtRojo">Clases</span> de Urbano Fussion</h3>
+                        <p>Martes-Jueves</p>
+                        <p>20hs</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <section class="galeria" id="galeria">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">04</div>
+                <div class="info">
+                    <span class="frase">LA MEJOR CALIDAD</span>
+                    <h2>GALERÍA</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/f6.jpg" class="img-galeria" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/f2.jpg" class="img-galeria" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/f3.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/f4.jpg" class="img-galeria" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/f5.jpg" class="img-galeria" alt="">
+                </div>
+                <div class="col">
+                    <img src="img/f1.jpg" class="img-galeria" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+    </section>
+    
+    <!-- SECCIÓN EQUIPO -->
+    <section class="equipo" id="equipo">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">05</div>
+                <div class="info">
+                    <span class="frase">SIEMPRE SUPERVISADO POR PROFESIONALES</span>
+                    <h2 class="TituloEquipo">EQUIPO</h2>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col">
+                    <img src="img/e1.png" alt="">
+                    <div class="info">
+                        <h2>MARCOS</h2>
+                        <p>Categorias</p>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/e1.png" alt="">
+                    <div class="info">
+                        <h2>DAMIÁN</h2>
+                        <p>Entrenador - Dueño - Coach</p>
+                        <a href="https://www.facebook.com/gerardodamian.caruso" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gerardodamiancaruso/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="img/e1.png" alt="">
+                    <div class="info">
+                        <h2>JUAN</h2>
+                        <p>Categorias</p>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contacto" id="contacto">
+        <div class="contenido-seccion">
+            <div class="contenedor-titulo">
+                <div class="numero">06</div>
+                <div class="info">
+                    <span class="frase">EMPEZÁ TU CAMBIO</span>
+                    <h2>INSCRIBITE</h2>
+                </div>
+            </div>
+            <form name="formulario" action="inscripcion.php" method="post">
+                <div class="fila">
+                    <div class="col">
+                        <input type="text" name="Nombre" required placeholder="Nombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="Apellido" required placeholder="Apellido">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="DNI" required placeholder="DNI">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col">
+                        <input type="text" name="FechaDeNacimiento" required placeholder="Nacimiento A-M-D">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="Genero" required placeholder="Género">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="Direccion" required placeholder="Dirección">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col">
+                        <input type="text" name="Telefono" required placeholder="Teléfono">
+                    </div>
+                    <div class="col">
+                        <input type="email" name="CorreoElectronico" required placeholder="Correo Electrónico">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="Profesion" required placeholder="Profesión">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col">
+                        <input type="text" name="Enfermedad" required placeholder="Enfermedad ¿Cuál?">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="Habito" required placeholder="Hábito Insalubre ¿Cuál?">
+                    </div>
+                    <div class="col">
+                        <input type="text" name="ActividadPrevia" required placeholder="Actividad Previa ¿Cuál?">
+                    </div>
+                </div>
+                <div class="mensaje">
+                    <p class="Terminos">Damos por hecho que usted ha leído y aceptado los términos y condiciones.</p>
+                    <a href="\img\TERMINOS Y CONDICIONES.pdf" download="TERMINOS Y CONDICIONES.pdf">
+                        <button type="button"><b>TÉRMINOS Y CONDICIONES</b></button>
+                    </a>
+                    <button type="submit" name="Inscripcion" value="Inscripcion"><b>ENVIAR FORMULARIO</b></button>
+                </div>
+            </form>            
+            <div class="fila-datos">
+                <div class="col">
+                    <a class="LinkUbi" href="https://www.google.com/maps/place/Int.+Castilla+421,+Campana,+Provincia+de+Buenos+Aires/@-34.1638543,-58.9654998,17z/data=!4m6!3m5!1s0x95bb723506a08b69:0xd9817160f1c7d9be!8m2!3d-34.1642582!4d-58.9639763!16s%2Fg%2F11c25xjm9d?entry=ttu" target="_blank">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Castilla 421 - Campana
+                    </a>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>
+                    +54 9 3489 489126
+                </div>
+                <div class="col">
+                    <i class="fa-regular fa-clock"></i>
+                    Lunes a Viernes - 07:00hs - 22:00hs
+                    <div>
+                        Sábados - 09:00hs - 19:00hs
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="info">
+            <p>&copy; 2024 - <span class="txtRojo">ZONA FITNESS GYM</span> - Todos Los Derechos Reservados</p>
+            <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/home" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/zona_fitnessgym/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

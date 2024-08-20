@@ -1,0 +1,7 @@
+Suavidad al desplazarse por las secciones de la pagina usando nav
+
+Mejorar la responsividad
+
+Añadir captcha en formulario de inscripcion
+
+Añadir calendario de pagos por cliente (Pago/No pago)
