@@ -10,6 +10,9 @@ html{
 }
 body{
     background-color: #949597;    
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* *********** */
@@ -25,11 +28,11 @@ body{
     border-bottom: 1px solid #1f283e;
     background-color: rgba(0,0,0,.7);
     z-index: 99;
-    padding: 0 20px;
+    padding: 0 125px;
 }
 .contenedor-header header{
     max-width: 1100px;
-    margin: auto;
+    margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -264,6 +267,9 @@ body{
 .servicios .fila .col .p-especial{
     font-weight: bold;
 }
+i {
+    font-style: normal;
+}
 .servicios .info-servicios{
     max-width: 800px;
     margin: auto;
@@ -275,6 +281,9 @@ body{
     border-collapse: collapse;
     position: relative;
     bottom: 100px;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
 }
 .servicios .info-servicios table td{
     padding: 30px;
@@ -585,6 +594,12 @@ footer .info .redes a:hover{
 /* RESPONSIVE */
 /* *********** */
 @media only screen and (max-width: 900px) {
+    body {
+        min-width: 90vh;
+    }
+    .servicios .info-servicios table td {
+        padding: 15px;
+    }
     header nav{
         position: initial;
         display: none;
@@ -592,6 +607,19 @@ footer .info .redes a:hover{
     }
     header .redes{
         display: none;
+    }
+    .contenedor-header {
+        position: relative;
+        padding: 0 20px;
+    }
+    #icono-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px; /* Ajusta este valor según la distancia que desees del borde derecho */
+    }
+    header h1 {
+        margin-right: 60px; /* Ajusta este valor para darle más espacio al ícono */
     }
     .nav-responsive{
         display: block;

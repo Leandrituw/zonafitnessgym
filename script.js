@@ -14,12 +14,6 @@ function mostrarOcultarMenu() {
 }
 
 // Función para ocultar el menú al seleccionar una opción
-function seleccionar() {
-    const nav = document.getElementById("nav");
-    nav.classList.remove("responsive");
-    menuVisible = false;
-}
-
 function seleccionar(event) {
     event.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
@@ -32,8 +26,17 @@ function seleccionar(event) {
             behavior: "smooth" // Hace que el desplazamiento sea suave
         });
     }
+
+    // Oculta el menú después de seleccionar una opción
+    const nav = document.getElementById("nav");
+    nav.classList.remove("responsive");
+    menuVisible = false;
 }
 
+// Asocia la función `seleccionar` a todos los enlaces del menú
+document.querySelectorAll('#nav a').forEach(enlace => {
+    enlace.addEventListener('click', seleccionar);
+});
 
 // LIGHTBOX para las imágenes de la galería
 const imagenes = document.querySelectorAll('.img-galeria'); // Selecciona todas las imágenes de la galería
@@ -62,5 +65,3 @@ const aparecerImagen = (imagen) => {
     contenedorLight.classList.toggle('show'); // Muestra el lightbox
     imagenLight.classList.toggle('showImage');
 };
-
-
